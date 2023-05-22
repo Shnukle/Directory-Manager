@@ -7,5 +7,4 @@ path = Path(usrinput)
 
 if path.exists() == True:
     delete_files(usrinput)
-    print("files deleted")
 else: print("error: directory could not be found")
