@@ -13,3 +13,7 @@ def delete_files(filepath):
                 item.rmdir()
             except PermissionError:
                 print(f"Permission error: Could not delete {item}")
+def check_directory(filepath):
+    p = Path(filepath)
+    for item in p.glob('*'):
+        print(item)
